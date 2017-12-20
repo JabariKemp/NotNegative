@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.dev.jabarik.notnegative.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/cred"
+        android:translationZ="3dp" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="516dp"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/newbordersolid"
+            android:text="Positive Wallpapers with Quotes"
+            android:textAlignment="center"
+            android:textColor="@color/ctext"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="75dp">
+            <!--line -->
+
+            <!-- line -->
+        </TextView>
+
+
+        />
+
+
+        <!--CardView 1 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/cb"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Create Your Theme"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+        <!-- End of CardView 1-->
+
+        <!--CardView 2 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:paddingTop="5dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_row="0"
+                    android:adjustViewBounds="true"
+                    android:background="@color/cred"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:onClick="pickColor"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/coloricon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:padding="10dp"
+                    android:text="Select Color -"
+                    android:textSize="25sp" />
+            </GridLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!-- End of CardView 2-->
+        <!--Start of Alignment Card 3 -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:padding="5dp">
+                <!-- Group 1 -->
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_column="0"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="Text Style: "
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/butt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_margin="4dp"
+
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="button"
+                            android:tag="1"
+                            android:text="Bold"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_margin="4dp"
+
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="button"
+                            android:tag="2"
+                            android:text="None"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="3"
+                            android:layout_margin="4dp"
+
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="button"
+                            android:tag="3"
+                            android:text="Italic"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </RadioGroup>
+                <!-- Group 2 -->
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_row="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:paddingTop="5dp"
+                            android:text="Border Style: "
+                            android:textAlignment="center"
+                            android:textSize="13.25sp" />
+
+                        <Button
+                            android:id="@+id/butt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="buttonBorder"
+                            android:tag="4"
+                            android:text="Dotted"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="buttonBorder"
+                            android:tag="5"
+                            android:text="None"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="buttonBorder"
+                            android:tag="6"
+                            android:text="Solid"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </RadioGroup>
+                <!-- Group 3 -->
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_row="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:text="Text Position:"
+                            android:textAlignment="center"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/butt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+
+                            android:background="@color/cb"
+                            android:onClick="buttonAlignment"
+                            android:tag="7"
+                            android:text="Left"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="buttonAlignment"
+                            android:tag="8"
+                            android:text="Center"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/butt9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@color/cb"
+                            android:onClick="buttonAlignment"
+                            android:tag="9"
+                            android:text="Right"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </RadioGroup>
+            </GridLayout>
+        </android.support.v7.widget.CardView>
+        <!-- End of Alignment Card 3 -->
+
+        <!--POST BUTTON TOP-->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/cb"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="8dp">
+
+            <Button
+                android:id="@+id/setWall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/cred"
+                android:onClick="setWallpaper"
+                android:padding="5dp"
+                android:text="SET WALLPAPER"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+        <!--POST BUTTON BOT-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:alpha="0"
+        android:gravity="bottom|center_horizontal"
+        android:padding="20dp"
+        android:paddingBottom="0dp"
+        android:text=" - Elon Musk"
+        android:textColor="#96000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:padding="30dp"
+            android:translationZ="10dp"
+            app:srcCompat="@drawable/bordersolid" />
+
+        <TextView
+            android:id="@+id/backText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:autoText="false"
+            android:background="@drawable/newbordersolid"
+            android:breakStrategy="balanced"
+            android:gravity="right|center_vertical"
+            android:hyphenationFrequency="none"
+            android:padding="43dp"
+            android:singleLine="false"
+            android:text="Failure is an option here. If things are not failing, you are not innovating enough"
+            android:textAlignment="gravity"
+            android:textColor="#96000000"
+            android:textSize="50sp"
+            android:textStyle="normal|bold"
+            android:translationZ="4dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="286dp" />
+
+        <TextView
+            android:id="@+id/loadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            android:text="LOADING"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

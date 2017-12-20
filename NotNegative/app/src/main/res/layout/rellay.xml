@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryLightColor"
+    android:orientation="vertical"><![CDATA[
+
+    />
+
+    ]]>
+
+    <TextView
+        android:id="@+id/backText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:alpha="0"
+        android:autoText="false"
+        android:background="@drawable/newbordersolid"
+        android:breakStrategy="balanced"
+        android:elevation="0dp"
+        android:gravity="right|center_vertical"
+        android:hyphenationFrequency="none"
+        android:padding="50dp"
+        android:singleLine="false"
+        android:text="Failure is an option here. If things are not failing, you are not innovating enough"
+        android:textAlignment="gravity"
+        android:textColor="#96000000"
+        android:textSize="50sp"
+        android:textStyle="normal|bold"
+        android:translationZ="4dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/greenSelect"
+        android:elevation="1dp" />
+
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:padding="30dp"
+        android:translationZ="10dp"
+        app:srcCompat="@drawable/bordersolid" />
+
+    <TextView
+        android:id="@+id/authorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:alpha="0"
+        android:gravity="bottom|center_horizontal"
+        android:padding="20dp"
+        android:paddingBottom="0dp"
+        android:text=" - Elon Musk"
+        android:textColor="#96000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:translationZ="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:elevation="11dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/action_bar"
+            android:layout_width="match_parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="1"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    app:cardBackgroundColor="@color/primaryDarkColor"
+                    app:cardElevation="0dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Positive Wallpapers With Quotes"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="5dp"
+                            android:text="Text Style"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonTS"
+                                    android:tag="1"
+                                    android:text="Bold"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/one1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:background="?attr/colorAccent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonTS"
+                                    android:tag="2"
+                                    android:text="None"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/one2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonTS"
+                                    android:tag="3"
+                                    android:text="Italic"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/one3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textcolor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="5dp"
+                            android:text="Text Color"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="setTextColor"
+                                    android:tag="10"
+                                    android:text="Black"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/four1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorAccent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textVieww"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="setTextColor"
+                                    android:tag="11"
+                                    android:text="White"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/four2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textAlign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="5dp"
+                            android:text="Text Alignment"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonAlignment"
+                                    android:tag="7"
+                                    android:text="Left"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/three1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="?attr/colorAccent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonAlignment"
+                                    android:tag="8"
+                                    android:text="Center"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/three2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonAlignment"
+                                    android:tag="9"
+                                    android:text="Right"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/three3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textAlign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:text="Border Style"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonBorder"
+                                    android:tag="4"
+                                    android:text="Dotted"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/two1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="?attr/colorAccent"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonBorder"
+                                    android:tag="5"
+                                    android:text="None"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/two2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/butt6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_horizontal"
+                                    android:onClick="buttonBorder"
+                                    android:tag="6"
+                                    android:text="Solid"
+                                    android:textColor="@color/secondaryColor"
+                                    android:textSize="25dp" />
+
+                                <View
+                                    android:id="@+id/two3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/secondaryLightColor"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/textAlign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="10dp"
+                            android:text="Select Background Color"
+                            android:textColor="@color/secondaryDarkColor"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageButton"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1"
+                                android:onClick="pickColor"
+                                android:padding="5dp"
+                                app:srcCompat="@drawable/coloricon" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/secondaryLightColor"
+                        android:onClick="previewDialog"
+                        android:text="Preview"
+                        android:textColor="@color/secondaryDarkColor" />
+
+                    <Button
+                        android:id="@+id/setWall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/secondaryLightColor"
+                        android:onClick="setWallpaper"
+                        android:text="Set Wallpaper"
+                        android:textColor="@color/secondaryDarkColor" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loadText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/authorView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:elevation="15dp"
+        android:text="Loading"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
